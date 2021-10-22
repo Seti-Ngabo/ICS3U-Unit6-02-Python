@@ -29,6 +29,10 @@ def main():
     big_number = 0
     counter = 0
 
+    # heading
+    print("Here is the list of random numbers:")
+    print("")
+
     # process
     for counter in range(0, 11):
         random_numbers = random.randint(0, 100)
