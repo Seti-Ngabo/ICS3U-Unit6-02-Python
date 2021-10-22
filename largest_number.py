@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+# Created by: Seti Ngabo
+# Created on: Oct 2021
+# This program print 10 random numbers and the largets number
+
 import random
 
 
