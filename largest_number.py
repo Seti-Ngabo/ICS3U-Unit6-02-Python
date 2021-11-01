@@ -7,43 +7,38 @@
 import random
 
 
-def largest_number(random_numbers):
-    # This function calculate maximum number
-    counter = 0
-    final_number = 0
+def largest_number(number):
+    # This function finds the largest number
+
+    big_number = number[1]
 
     # process
-    for counter in range(1, len(random_numbers)):
-        # output
-        print("The random number {0} is: {1}".format(counter, random_numbers[counter]))
+    for counter in number:
+        if counter > big_number:
+            big_number = counter
 
-        if random_numbers[counter] > final_number:
-            final_number = random_numbers[counter]
-
-    return final_number
+    return big_number
 
 
 def main():
-    # This function calculate average
+    # This function prints the largest number
     number = []
-    big_number = 0
-    counter = 0
 
     # heading
-    print("Here is the list of random numbers:")
+    print("Here is a list of random numbers; ")
     print("")
 
     # process
-    for counter in range(0, 11):
-        random_numbers = random.randint(0, 100)
+    for counter in range(1, 11):
+        random_numbers = random.randint(1, 100)
         number.append(random_numbers)
+        print("The random number {0} is {1}".format(counter, random_numbers))
 
     # call functions
     big_number = largest_number(number)
 
     # output
-    print("")
-    print("The largest number is: {0}".format(big_number))
+    print("\nThe largest number is: {0}".format(big_number))
 
     print("\nDone.")
 
